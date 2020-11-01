@@ -1,0 +1,19 @@
+<resources>
+    //LAYOUTS
+    <string name="app_name">FormularioContacto</string>
+    <string name="pantalla_formulario">Formulario</string>
+    <string name="pantalla_confirmacion">Confirmar</string>
+
+    // LABELS
+    <string name="nombreLabel">Nombre Completo</string>
+    <string name="telefonoLabel">Teléfono</string>
+    <string name="emailLabel">E-mail</string>
+    <string name="descripcionLabel">Descripción</string>
+
+    // BOTONES
+    <string name="siguienteBtn">Siguiente</string>
+    <string name="editarBtn">Editar Datos</string>
+
+    <string name="Confirmacion">Confirmar Datos</string>
+
+</resources>
