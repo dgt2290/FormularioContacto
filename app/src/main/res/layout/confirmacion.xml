@@ -32,17 +32,49 @@
             android:text="@string/Confirmacion"
             android:gravity="center"
             android:textSize="30dp"
-            android:layout_marginTop="@dimen/margen_top"
+            android:layout_marginTop="@dimen/confirmar"
             >
-
         </TextView>
 
-        <ListView
-            android:id="@+id/lst"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/confTxtViewNombre"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            style="@style/formulariosLayout"
+            >
+        </com.google.android.material.textview.MaterialTextView>
 
-        </ListView>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/confTxtViewFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/formulariosLayout"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/confTxtViewTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/formulariosLayout"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/confTxtViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/formulariosLayout"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/confTxtViewDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/formulariosLayout"
+            >
+        </com.google.android.material.textview.MaterialTextView>
 
         <Button
             android:layout_width="wrap_content"

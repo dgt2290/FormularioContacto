@@ -15,6 +15,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margen_bottom"
             >
 
             <com.google.android.material.appbar.MaterialToolbar
@@ -29,103 +30,69 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nombreTF"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margen_left"
-            android:layout_marginTop="@dimen/margen_top"
-            android:layout_marginRight="@dimen/margen_right"
-            android:layout_marginBottom="@dimen/margen_bottom"
+            style="@style/formulariosLayout"
             android:hint="@string/nombreLabel"
-            >
+            android:textColorHint="@color/light_pink">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formTxtImputNombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="italic" />
+                style="@style/formulariosTxtImput" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <DatePicker
 
-            android:layout_width="wrap_content"
+            style="@style/formulariosLayout"
+            android:layout_width="304dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/margen_left"
-            android:layout_marginTop="@dimen/margen_top"
-            android:layout_marginRight="@dimen/margen_right"
-            android:layout_marginBottom="@dimen/margen_bottom"
-            android:forceDarkAllowed="true"
-            android:theme="@style/Widget.MaterialComponents.MaterialCalendar"
-            >
-
+            android:forceDarkAllowed="true">
 
         </DatePicker>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/telefonoTF"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margen_left"
-            android:layout_marginTop="@dimen/margen_top"
-            android:layout_marginRight="@dimen/margen_right"
-            android:layout_marginBottom="@dimen/margen_bottom"
+            style="@style/formulariosLayout"
             android:hint="@string/telefonoLabel"
             >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formTxtImputTel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="italic"
+                style="@style/formulariosTxtImput"
                  />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailTF"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margen_left"
-            android:layout_marginTop="@dimen/margen_top"
-            android:layout_marginRight="@dimen/margen_right"
-            android:layout_marginBottom="@dimen/margen_bottom"
+            style="@style/formulariosLayout"
             android:hint="@string/emailLabel">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formTxtImputEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="italic"
+                style="@style/formulariosTxtImput"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/descripcionTF"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margen_left"
-            android:layout_marginTop="@dimen/margen_top"
-            android:layout_marginRight="@dimen/margen_right"
-            android:layout_marginBottom="@dimen/margen_bottom"
-            android:hint="@string/descripcionLabel">
+            android:hint="@string/descripcionLabel"
+            style="@style/formulariosLayout"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formTxtImputDes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="italic"
+                style="@style/formulariosTxtImput"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
-            android:id="@+id/btn_siguiente"
+            android:id="@+id/btnSiguiente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="@dimen/btn_siguiente"
-            android:text="@string/siguienteBtn"
-            android:theme="@style/Widget.MaterialComponents.Button"
-            >
+            android:text="@string/BtnSiguiente"
+            android:textSize="@dimen/btnSiguiente"
+            android:theme="@style/Widget.MaterialComponents.Button">
 
         </Button>
 

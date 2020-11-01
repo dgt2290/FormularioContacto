@@ -10,4 +10,21 @@
 
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="formulariosLayout" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margen_left</item>
+        <item name="android:layout_marginTop">@dimen/margen_top</item>
+        <item name="android:layout_marginRight">@dimen/margen_right</item>
+        <item name="android:layout_marginBottom">@dimen/margen_bottom</item>
+    </style>
+
+    <style name="formulariosTxtImput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
 </resources>

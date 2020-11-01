@@ -11,7 +11,7 @@
     <string name="descripcionLabel">Descripción</string>
 
     // BOTONES
-    <string name="siguienteBtn">Siguiente</string>
+    <string name="BtnSiguiente">Siguiente</string>
     <string name="editarBtn">Editar Datos</string>
 
     <string name="Confirmacion">Confirmar Datos</string>
