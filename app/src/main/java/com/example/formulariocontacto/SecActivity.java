@@ -25,15 +25,31 @@ public class SecActivity extends AppCompatActivity {
 
         Bundle parametros = getIntent().getExtras();
 
-        ArrayList<String> datos = new ArrayList<>();
+        String datos[] = {  parametros.getString("pnombre"),
+                            "Fecha de Nacimiento: " + parametros.getString("pfecha"),
+                            "Tel. " + parametros.getString("ptel"),
+                            "E-mail: " + parametros.getString("pemail"),
+                            "Descripción: " + parametros.getString("pdes")
+                         };
+
+        /* ArrayList<String> datos = new ArrayList<>(); // Solución con ArrayList
 
         datos.add(parametros.getString("pnombre"));
-        datos.add(parametros.getString("ptel"));
-        datos.add(parametros.getString("pemail"));
-        datos.add(parametros.getString("pdes"));
+        datos.add("Tel. " + parametros.getString("ptel"));
+        datos.add("E-mail: " + parametros.getString("pemail"));
+        datos.add("Descripción: " + parametros.getString("pdes")); */
 
-        /* ListView lstView = (ListView) findViewById(R.id.lstView);
-        lstView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, datos)); */
+        ListView miLista = (ListView) findViewById(R.id.lstView);
+        miLista.setAdapter(new ArrayAdapter(this, R.layout.list_view, datos));
+
+        Button btnEditar = (Button) findViewById(R.id.btnEditar);
+        btnEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SecActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 }

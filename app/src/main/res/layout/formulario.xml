@@ -39,15 +39,21 @@
                 style="@style/formulariosTxtImput" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <DatePicker
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CalendarView>
 
+        <CalendarView
+            android:id="@+id/datePicker"
             style="@style/formulariosLayout"
             android:layout_width="304dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:forceDarkAllowed="true">
 
-        </DatePicker>
+        </CalendarView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/telefonoTF"

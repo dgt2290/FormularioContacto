@@ -26,5 +26,28 @@
         <item name="android:textStyle">italic</item>
     </style>
 
+    <style name="confirmar" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/Confirmacion</item>
+        <item name="android:textSize">@dimen/confirmar</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/confirmar_top</item>
+        <item name="android:layout_marginBottom">@dimen/confirmar_bottom</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="confirmacionTxtView" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/pad_top</item>
+        <item name="android:paddingBottom">@dimen/pad_bottom</item>
+        <item name="android:paddingLeft">@dimen/pad_left</item>
+        <item name="android:paddingRight">@dimen/pad_left</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
 
 </resources>

@@ -29,27 +29,24 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Confirmacion"
-            android:textSize="@dimen/confirmar"
-            android:gravity="center"
-            android:layout_marginTop="@dimen/margen_top"
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/confirmar"
             />
 
         <ListView
             android:id="@+id/lstView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/list"/>
+            android:layout_height="332dp"
+            android:divider="@null" />
 
         <Button
+            android:id="@+id/btnEditar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_gravity="center"
             android:text="@string/editarBtn"
+            android:layout_marginTop="@dimen/confirmar_top"
             android:theme="@style/Widget.MaterialComponents.Button"
             >
 
