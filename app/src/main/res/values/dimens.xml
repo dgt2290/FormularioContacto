@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     //TEXT
-    <dimen name="btnSiguiente">20dp</dimen>
+    <dimen name="btnSiguiente">20sp</dimen>
 
     //MARGENES
     <dimen name="margen_top">5dp</dimen>
@@ -9,4 +9,5 @@
     <dimen name="margen_left">10dp</dimen>
     <dimen name="margen_right">10dp</dimen>
     <dimen name="confirmar">30dp</dimen>
+    <dimen name="list">30dp</dimen>
 </resources>

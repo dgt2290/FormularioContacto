@@ -10,11 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margen_bottom"
+            >
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/topAppBar"
@@ -30,51 +33,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Confirmacion"
+            android:textSize="@dimen/confirmar"
             android:gravity="center"
-            android:textSize="30dp"
-            android:layout_marginTop="@dimen/confirmar"
-            >
-        </TextView>
+            android:layout_marginTop="@dimen/margen_top"
+            />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/confTxtViewNombre"
+        <ListView
+            android:id="@+id/lstView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/formulariosLayout"
-            >
-        </com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/confTxtViewFechaNac"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/formulariosLayout"
-            >
-        </com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/confTxtViewTel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/formulariosLayout"
-            >
-        </com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/confTxtViewEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/formulariosLayout"
-            >
-        </com.google.android.material.textview.MaterialTextView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/confTxtViewDes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/formulariosLayout"
-            >
-        </com.google.android.material.textview.MaterialTextView>
+            android:layout_marginTop="@dimen/list"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -87,10 +55,6 @@
 
         </Button>
 
-
-
-
     </LinearLayout>
-
 
 </ScrollView>

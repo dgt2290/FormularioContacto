@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -13,8 +14,6 @@ import com.google.android.material.textfield.TextInputLayout;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-    ArrayList<String> datos = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +29,17 @@ public class MainActivity extends AppCompatActivity {
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Creamos el Intent
+                Intent i = new Intent(MainActivity.this, SecActivity.class);
 
-                formTxtImputNombre.getText();
-                formTxtImputTel.getText();
-                formTxtImputEmail.getText();
-                formTxtImputDes.getText();
+                //Agregamos los datos al Intent
+                i.putExtra("pnombre", formTxtImputNombre.getText());
+                i.putExtra("ptel", formTxtImputTel.getText());
+                i.putExtra("pemail", formTxtImputEmail.getText());
+                i.putExtra("pdes", formTxtImputDes.getText());
 
-                Intent i = new Intent(this, formulario.class);
-
+                //Iniciamos la actividad
+                startActivity(i);
             }
         });
 
