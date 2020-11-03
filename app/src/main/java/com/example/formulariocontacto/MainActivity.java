@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //Agregamos los datos al Intent
                 i.putExtra("pnombre", formTxtImputNombre.getText().toString());
-                i.putExtra("pfecha", fecha);
+                i.putExtra("pfecha", fechaNac.getText().toString());
                 i.putExtra("ptel", formTxtImputTel.getText().toString());
                 i.putExtra("pemail", formTxtImputEmail.getText().toString());
                 i.putExtra("pdes", formTxtImputDes.getText().toString());
