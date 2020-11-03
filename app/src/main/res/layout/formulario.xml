@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 app:title="@string/pantalla_formulario"
-                app:titleTextColor="@color/white" />
+                app:titleTextColor="@color/white"
+                 />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -32,33 +33,70 @@
             android:id="@+id/nombreTF"
             style="@style/formulariosLayout"
             android:hint="@string/nombreLabel"
-            android:textColorHint="@color/light_pink">
+            app:hintTextColor="@color/dark_pink"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formTxtImputNombre"
                 style="@style/formulariosTxtImput" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
-        <CalendarView
-            android:id="@+id/calendar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </CalendarView>
+        <LinearLayout
+            style="@style/layoutAux"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="@string/fechaNacLabel"
 
-        <CalendarView
-            android:id="@+id/datePicker"
-            style="@style/formulariosLayout"
-            android:layout_width="304dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:forceDarkAllowed="true">
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:theme="@style/Widget.MaterialComponents.Toolbar.Primary">
 
-        </CalendarView>
+            </TextView>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                />
+            <TextView
+                android:id="@+id/fechaNac"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                style="@style/formulariosTxtImput"
+                android:text="Seleccione una fecha"
+                >
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btnSeleccionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/btnSeleccionarFecha"
+                android:theme="@style/Widget.MaterialComponents.Button"
+                >
+            </Button>
+
+        </LinearLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/telefonoTF"
             style="@style/formulariosLayout"
             android:hint="@string/telefonoLabel"
+            app:hintTextColor="@color/dark_pink"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -70,7 +108,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailTF"
             style="@style/formulariosLayout"
-            android:hint="@string/emailLabel">
+            android:hint="@string/emailLabel"
+            app:hintTextColor="@color/dark_pink"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formTxtImputEmail"
@@ -82,11 +122,13 @@
             android:id="@+id/descripcionTF"
             android:hint="@string/descripcionLabel"
             style="@style/formulariosLayout"
+            app:hintTextColor="@color/dark_pink"
             >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/formTxtImputDes"
                 style="@style/formulariosTxtImput"
+
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,10 +138,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/BtnSiguiente"
+            android:text="@string/btnSiguiente"
             android:textSize="@dimen/btnSiguiente"
-            android:theme="@style/Widget.MaterialComponents.Button">
-
+            android:theme="@style/Widget.MaterialComponents.Button"
+            >
         </Button>
 
     </LinearLayout>

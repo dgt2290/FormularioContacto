@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.formulariocontacto.R;
 import com.google.android.material.textfield.TextInputEditText;
@@ -46,7 +47,17 @@ public class SecActivity extends AppCompatActivity {
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Creamos el Intent
                 Intent i = new Intent(SecActivity.this, MainActivity.class);
+
+                //Agregamos los datos al Intent
+                i.putExtra("pnombre", parametros.getString("pnombre"));
+                i.putExtra("pfecha", parametros.getString("pfecha"));
+                i.putExtra("ptel", parametros.getString("ptel"));
+                i.putExtra("pemail", parametros.getString("pemail"));
+                i.putExtra("pdes", parametros.getString("pdes"));
+
+                //Iniciamos la actividad
                 startActivity(i);
             }
         });

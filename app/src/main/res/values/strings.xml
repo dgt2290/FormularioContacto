@@ -6,13 +6,15 @@
 
     // LABELS
     <string name="nombreLabel">Nombre Completo</string>
+    <string name="fechaNacLabel">Fecha de Nacimiento</string>
     <string name="telefonoLabel">Teléfono</string>
     <string name="emailLabel">E-mail</string>
     <string name="descripcionLabel">Descripción</string>
 
     // BOTONES
-    <string name="BtnSiguiente">Siguiente</string>
-    <string name="editarBtn">Editar Datos</string>
+    <string name="btnSeleccionarFecha">Seleccionar</string>
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="btnEditar">Editar Datos</string>
 
     <string name="Confirmacion">Confirmar Datos</string>
 
